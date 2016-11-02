@@ -1,0 +1,12 @@
+# Morfessor cheatsheet
+## few morfessor commands to play with komi data
+## complete documentation : http://morfessor.readthedocs.io/en/latest/
+
+* train a model with a list of words (occ\tword), -S option outputs a text model
+> morfessor-train --traindata-list -d ones kpv-all-tokenized-2.txt -S kpv-model.txt
+
+* segment interactively with a model
+> morfessor-segment -L kpv-model.txt -
+
+* segment a corpus file
+> morfessor-segment -L kpv-model.txt test-corpus.txt
